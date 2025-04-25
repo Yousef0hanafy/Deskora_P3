@@ -21,8 +21,9 @@ body{
 .container{
     width: 80%;
     padding: 0 15px;
-    margin:  0 auto;
+    margin:  0 auto;  
 }
+
 /* Small */
 @media (min-width : 768px) {
     .container{
@@ -68,7 +69,6 @@ body{
 /* Start Header */
 .header{
     padding: 20px;
-    height: 8%;
     background-color: #1F1F1F;
 }
 .header .container{
@@ -159,7 +159,7 @@ body{
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 60%);
+    background-color: rgba(0, 0, 0, 0.6);
  }
 .landing .intro-text{
     position: absolute;
@@ -190,7 +190,7 @@ body{
 }
 .features .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(320px , 1fr));
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     grid-gap: 20px;
 }
 .features .feat{
@@ -208,7 +208,7 @@ body{
 .features .feat p{
     font-size: 17px;
     line-height: 1.6;
-    color-scheme: #eee;
+    color: #777;
 }
 /* End Features */
 /* Start Services */
@@ -217,7 +217,7 @@ body{
 }
 .services .services-content{
     display: grid;
-    grid-template-columns: repeat( auto-fill , minmax(320px , 1fr));
+    grid-template-columns: repeat( auto-fill , minmax(300px , 1fr));
     gap: 30px;
     margin-top: 100px;
 }
@@ -274,14 +274,20 @@ body{
 }
 .protofilo .protofilo-content{
     display: grid;
-    grid-template-columns: repeat( auto-fill , minmax(320px , 1fr));
+    grid-template-columns: repeat( auto-fill , minmax(290px , 1fr));
     gap: 30px;
     margin-top: 100px;
 }
 .protofilo .protofilo-content .card{
+
     background-color: white;
-   position: relative;
+    position: relative;
 }
+.protofilo .protofilo-content .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+} 
 .protofilo .protofilo-content .card .card-img{
     max-height: 450px;
     overflow: hidden;
@@ -412,14 +418,14 @@ body{
     font-size: 24px;
 }
 .contact .info .social i{
-    margin-left: 15px;
+    margin-left: 10px;
     color: var(--secondary-color);
     cursor: pointer;
     transition: .3s;
-
 }
 .contact .info .social i:hover{
     color: blue;
+    transform: scale(1.1);
 }
 @media (max-width : 767px) {
     .contact .info .label,
@@ -427,6 +433,7 @@ body{
         font-size: 25px;
     }
 }
+/* End Contact */
 /* Start footer */
 .footer{
     background-color: var(--secondary-color);
@@ -440,30 +447,3 @@ body{
     font-weight: bold;
 }
 /* End footer */
-
-
-
-
-
-
-
-
-
-
-/* End Contact */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
